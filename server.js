@@ -7,7 +7,7 @@ const MailMessage = require('nodemailer/lib/mailer/mail-message');
 
 const app = express();
 
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 
 // ================ Linking Styles and Javascript ==============
 app.use(express.static(__dirname + '/views'));
@@ -112,6 +112,10 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(__dirname + '/views'));
+}
+
 app.listen(PORT, () => {
-    console.log('server is starting on PORT, ', 8080)
+    console.log('server is starting on PORT, ', PORT)
 });
