@@ -93,7 +93,7 @@ app.post('/send', (req, res) => {
     // send mail with defined transport object
     let mailOptions = {
         from: `"${req.body.inquiryName}" <${req.body.inquiryEmail}>`, // sender address
-        to: "info@mileswindu.com", // list of receivers
+        to: "info@remnantstrategy.com", // list of receivers
         subject: "Remnant Strategy Inquiry", // Subject line
         text: "Hello world?", // plain text body
         html: output, // html body
