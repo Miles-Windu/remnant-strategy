@@ -11,6 +11,9 @@ const PORT = process.env.PORT || 8080;
 
 // ================ Linking Styles and Javascript ==============
 app.use(express.static(__dirname + '/views'));
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(__dirname + '/views'));
+}
 
 
 // Data Parsing
@@ -112,9 +115,6 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(__dirname + '/views'));
-}
 
 app.listen(PORT, () => {
     console.log('server is starting on PORT, ', PORT)
