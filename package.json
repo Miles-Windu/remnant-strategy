@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/Miles-Windu/remnant-strategy/issues"
   },
-  "homepage": "https://github.com/Miles-Windu/remnant-strategy",
+  
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
@@ -26,6 +26,7 @@
     "path": "^0.12.7"
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0"
+    "gh-pages": "^3.1.0",
+    "homepage": "https://github.com/Miles-Windu/remnant-strategy"
   }
 }
