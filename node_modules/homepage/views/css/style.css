@@ -1,0 +1,647 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color:#3d3d3d;
+}
+
+.navbar {
+    box-shadow:0 10px 20px rgba(0,0,0,0.03);
+    background-color:#fff;
+}
+
+.navbar-brand img {
+    width:140px;
+}
+
+.nav-item {
+    padding:10px 15px;
+}
+
+.nav-link:link,
+.nav-link:visited {
+    color:#3d3d3d;
+    font-weight:500;
+}
+
+.nav-link:hover {
+    color:#000;
+}
+
+/* ================================HERO SECTION================================ */
+
+.hero {
+    width:100%;
+    height:100vh;
+    background:linear-gradient(to right bottom, rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.534)),url('../img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero-content {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.hero-heading {
+    font-size:100px;
+    font-weight:700;
+    color:#fff;
+}
+
+@media (max-width:768px) {
+    .hero-heading {
+        font-size:56px;
+    }
+}
+
+/* ================================ABOUT-US SECTION================================ */
+
+.about-us {
+    padding:80px 0;
+    background:linear-gradient(to right bottom,rgba(0, 0, 0, 0.541),rgba(0, 0, 0, 0.486)),url('../img/about.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.about-heading,
+.believe-heading {
+    font-size:55px;
+    font-weight:800;
+    position: relative;
+    line-height:1.7;
+    color:#fff;
+}
+
+.about-heading span {
+    font-weight:300;
+}
+
+.about-heading::before,
+.believe-heading::before {
+    content:"";
+    height:5px;
+    background-color:#fff;
+    display:block;
+    width:100px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    border-radius:100px;
+}
+
+.about-content {
+    padding:80px 0;
+}
+
+.about-main-text {
+    font-size:45px;
+    font-weight:600;
+    color:#f9f9f9;
+}
+
+.about-para {
+    color:#f9f9f9;
+    padding-top:20px;
+    font-size:20px;
+}
+
+
+/* ================================BELIEVE SECTION================================ */
+
+/* .believe {
+    padding:80px 0;
+    background-color:#fbcf00;
+    background-image: url('../img/believe.png');
+    background-repeat: no-repeat;
+    background-position:right;
+    background-size:50%;
+}
+
+.believe-heading {
+    color:rgb(63, 63, 63);
+}
+
+.believe-heading::before {
+    background:rgb(63, 63, 63);
+}
+
+.believe-content {
+    padding:80px 0;
+}
+
+.believe-main-text {
+    font-size:45px;
+    font-weight:600;
+    color:rgb(63, 63, 63);
+    margin-bottom:15px;
+}
+
+.believe-para {
+    font-size:18px;
+} */
+
+.philosophy {
+    padding:80px 0;
+    background-color:#fbcf00;
+}
+
+.p-heading {
+    font-size:45px;
+    font-weight:300;
+    margin-bottom:30px;
+    position: relative;
+    line-height: 2;
+}
+
+.p-heading::before {
+    content:"";
+    height:5px;
+    background-color:rgb(63,63,63);
+    display:block;
+    width:100px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    border-radius:100px;
+}
+
+.p-sub {
+    font-size:24px;
+    font-style:italic;
+    font-weight:300;
+    margin-bottom:30px;
+}
+
+.p-heading span {
+    font-weight:800;
+}
+
+.p-para {
+    font-size:20px;
+    line-height:1.6;
+    font-weight:600;
+}
+
+.remnat {
+    float: right;
+    padding-top:10px;
+    font-weight:800;
+    font-size:28px;
+}
+
+.p-img img{
+    height:420px;
+}
+
+/* ================================APPROACH SECTION================================ */
+
+.approach {
+    padding:80px;
+    background:rgb(235, 233, 252);
+}
+
+.approach-heading {
+    font-size:45px;
+    font-weight:300;
+    text-align:right;
+    position: relative;
+}
+
+.approach-heading::before {
+    content:"";
+    height:5px;
+    background-color:rgb(63,63,63);
+    display:block;
+    width:100px;
+    position:absolute;
+    bottom:0;
+    right:220px;;
+    border-radius:100px;
+}
+
+.approach-heading span {
+    font-weight:800;
+    color:#f72966;
+}
+
+.approach-main-txt {
+    color:#f72966;
+    font-weight:700;
+}
+
+.approach-sub {
+    font-weight:500;
+    color:#000;
+    margin:20px 0;
+}
+
+.approach-txt {
+    line-height:1.8;
+}
+
+/* ================================CULTUR SECTION================================ */
+
+.cultur {
+    padding:100px 0;
+    background:url('../img/cultur.png');
+    background-color:#f72966;
+    background-size:40%;
+    background-position:left;
+    background-repeat: no-repeat;
+}
+
+.cultur-content {
+    padding:80px 0;
+}
+
+.culture-main-text {
+    font-size:45px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.culture-para {
+    color:rgb(70, 70, 70);
+    font-size:18px;
+}
+
+/* ================================INNOVATION SECTION================================ */
+
+.innovation {
+    padding:170px 0;
+}
+
+.innovation-main-text {
+    font-size:45px;
+    font-weight:600;
+    margin-bottom:20px;
+    color:rgb(63, 63, 63);
+}
+
+.innovation-para {
+    color:rgb(70, 70, 70);
+    font-size:18px;
+}
+
+/* ================================EXPERTISE SECTION================================ */
+
+.expertise {
+    padding:80px 0;
+    background:url('../img/expertise.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.expertise-heading {
+    font-size:55px;
+    font-weight:800;
+    position: relative;
+    line-height:1.7;
+    color:rgb(63,63,63);
+    margin-bottom:30px;
+}
+
+.expertise-heading span {
+    font-weight: 300;
+}
+
+.expertise-heading::before {
+    content:"";
+    height:5px;
+    background-color:rgb(63,63,63);
+    display:block;
+    width:100px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    border-radius:100px;
+}
+
+
+.expertise-item {
+    font-size:30px;
+    color:rgb(61, 61, 61);
+    font-weight:600;
+    display:block;
+    margin-bottom:20px;
+}
+
+/* ================================NETWORK SECTION================================ */
+
+.network {
+    padding:80px 0;
+    background:url('../img/network.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    background-color:#fbcf00;
+}
+
+.network-heading {
+    font-size:55px;
+    font-weight:800;
+    position: relative;
+    line-height:1.7;
+    color:rgb(63,63,63);
+    margin-bottom:30px;
+    display:inline-block;
+    padding:10px;
+}
+
+.network-heading span {
+    font-weight: 300;
+}
+
+.network-heading::before {
+    content:"";
+    height:5px;
+    background-color:rgb(63,63,63);
+    display:block;
+    width:100px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    border-radius:100px;
+}
+
+.network-para {
+    margin-top:160px;
+    font-size:23px;
+    font-weight:600;
+}
+
+/* ================================EXPRIENCE SECTION================================ */
+
+.expriance {
+    padding:80px 0;
+    background:rgb(235, 233, 252);
+}
+
+.expriance-heading {
+    font-size:55px;
+    font-weight:800;
+    position: relative;
+    line-height:1.7;
+    color:rgb(63,63,63);
+    margin-bottom:30px;
+}
+
+.expriance-heading span {
+    font-weight:300;
+}
+
+.expriance-heading::before {
+    content:"";
+    height:5px;
+    background-color:rgb(63,63,63);
+    display:block;
+    width:100px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    border-radius:100px;
+}
+
+.exp-images img {
+    padding:10px 20px;
+}
+
+/* ================================BIO SECTION================================ */
+
+.bio {
+    padding:80px 0;
+}
+
+.bio-title {
+    font-size:55px;
+    font-weight:800;
+    position: relative;
+    line-height:1;
+    color:rgb(63,63,63);
+}
+
+.bio-title-ceo {
+    font-size:22px;
+    font-weight:800;
+    margin-bottom:35px;
+    display:block;
+    position: relative;
+}
+
+.bio-title-ceo::before {
+    content:"";
+    height:5px;
+    background-color:rgb(63,63,63);
+    display:block;
+    width:100px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    border-radius:100px;
+}
+
+.bio-heading {
+    font-weight:500;
+}
+
+
+
+@media (max-width:992px) {
+    .change-order {
+        flex-direction: column-reverse;
+    }
+
+    .bio-right {
+        margin-bottom:30px;
+    }
+}
+
+/* ================================CONTACT SECTION================================ */
+
+.contact {
+    padding:80px 0;
+    background:linear-gradient(to right bottom, #f72966, #d81f66)
+}
+
+input.form-control,
+textarea.form-control {
+    margin-bottom:20px;
+    border:none;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+    outline:none;
+    box-shadow:none;
+}
+
+.nav-tabs{
+    display:flex;
+    justify-content: center;
+    border:none;
+}
+
+.nav-tabs .nav-link {
+    font-size:15px;
+    color:#fff;
+    border-radius:100px;
+    margin:10px;
+}
+
+.nav-tabs a.nav-link.active {
+    background:#fff;
+}
+
+.mi-heading {
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+.mi-sub {
+    text-align:center;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+button.btn-submit {
+    padding:10px 40px;
+    border-radius:100px;
+    border:none;
+    color:#f72966;
+    background-color:#fff;
+    transition:.3s;
+}
+
+button.btn-submit:hover {
+    background-color:#000;
+    color:#fff;
+}
+
+
+
+
+
+
+
+
+
+/* ================================FOOTER================================ */
+
+.footer {
+    padding:30px 0;
+}
+
+.footer-content {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left img {
+    width:140px;
+}
+
+
+.footer-link {
+    color:#3d3d3d;
+    display:inline-block;
+    padding:10px;
+    text-decoration:none;
+}
+
+.footer-link:hover {
+    color:#000;
+    text-decoration:none;
+}
+
+
+@media (max-width:800px) {
+    .footer-content {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-left {
+        margin-bottom:30px;
+    }
+
+    .footer-link {
+        font-size:14px;
+        padding:8px;
+    }
+}
+
+div.copyright {
+    background:#eee;
+}
+
+.copy-text{
+    text-align:center;
+    padding:20px 0;
+    font-weight:500;
+}
+
+
+div.loader {
+    width:100%;
+    height:100vh;
+    background:#fff;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    position: fixed;
+    z-index:999999;
+}
+
+
+@media (max-width:768px) {
+
+    .about-heading,
+    .approach-heading,
+    .expertise-heading,
+    .network-heading,
+    .expriance-heading {
+        font-size:35px;
+    }
+    .about-content {
+        padding:50px 0;
+    }
+
+    .innovation-main-text,
+    .culture-main-text,
+    .p-heading,
+    .about-main-text {
+        font-size:35px;
+    }
+
+    .expertise-item {
+        font-size:22px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
